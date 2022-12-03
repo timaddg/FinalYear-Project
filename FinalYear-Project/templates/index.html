@@ -1,0 +1,64 @@
+{% extends "header.html" %} {% block content %}
+<!-- <style>
+  #about-section > * {
+    display: block;
+    text-align: center;
+    margin: 20px;
+  }
+  .prediction_link {
+    height: 30%;
+    width: 30%;
+    padding: 10px;
+    border-left-style: solid;
+    border-bottom-style: solid ;
+  }
+
+  .detect_link {
+    height: 30%;
+    width: 30%;
+    padding: 10px;
+    border-left-style: solid;
+    border-bottom-style: solid ;
+
+  }
+</style> -->
+<body>
+
+  <div class="container">
+    
+    <div class="row" style="display: flex; flex-direction: row;">
+      
+      <div class="col-lg-5 kBox justify-content-md-center" style="height: 250px; width: 200px;align-self: center;justify-content: center;">
+        
+          <h4 class="display-6" style="padding-top:5%">
+            Use this website to make your trading decisions for you
+          </h4>
+          <hr class="hr-1" />
+          <div class="text-center">
+            <button style="width: 350px;" onclick="window.location.href='visualize'" class="custom-btn btn-3"><span>View the results of our forecasting model <i class="fas fa-search-dollar"></i> </span></button>
+          </div>
+      </div>
+
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-5 kBox justify-content-md-center"  style="height: 250px; width: 200px;align-self: center;justify-content: center;">
+        <h4 class="display-6">
+          Our Machine Learning and Deep Learning algorithms were built using data
+          from the NSE of India
+        </h4>
+        
+        <hr class="hr-1" />
+        <div class="text-center">
+          <button style="width: 350px;" onclick="window.location.href='{{project_link}}'" class="custom-btn btn-3"><span>View our project files on GitHub! <i class="fab fa-github"></i> </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="about-section">
+    
+    
+  </div>
+</body>
+{% endblock content %}

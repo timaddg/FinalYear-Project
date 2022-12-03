@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Prediction</title>
+        <link rel="icon"  href="../static/images/favicon.png"/>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Bootstrap CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black ;">
+                <div class="container">
+                    <h2 style="color: white;" class="kHeading"><i class="far fa-chart-bar"></i> Stock Prediction</h>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(104, 104, 104);">
+                <div class="container">
+                    
+                        <button class="navbar-toggler" id="menuButton" style="outline: none; border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                        </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+        
+                            <li class="kNavItem nav-item">
+                                <a class="kSubHeading nav-link kNavLinkText" href="/"><i class="fas fa-home"></i> Home</a>
+                            </li>
+        
+                            <li class="kNavItem nav-item">
+                                <a class="kSubHeading nav-link kNavLinkText" href="visualize"><i class="far fa-eye"></i> Visualization</a>
+                            </li>
+        
+
+                            <li class="kNavItem nav-item">
+                                <a class="kSubHeading nav-link kNavLinkText" href="trend"><i class="fas fa-poll-h"></i> Trend Detection</a>
+                            </li>
+
+                            <li class="kNavItem nav-item">
+                                <a class="kSubHeading nav-link kNavLinkText" href="projectlink"><i class="fab fa-git-alt"></i> Project Link</a>
+                            </li>
+
+        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </body>
+    
+</html>
